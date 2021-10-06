@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Calculator</title>
+    <link rel="stylesheet" href="BusCalc.css">
+</head>
+<body>
+   
+    <main>
+        <section class="section1">
+            <div class="contain1">
+                <form action="">
+                    <div class="form_group">
+                        <h3>SIP Calculator</h3>
+                    </div>
+                    <div class="form_group" style="display: flex;">
+                        <select name="" id="currency" class="currency" onchange="currencyChange(this)">
+                            <option id="Euro" value="Rs">&#8377; &nbsp; Eur 💸</option>
+                            <option id="dols" value="$">&#128176; Dol 💸</option>
+                        </select>
+                        <div class="label" style="text-align: right; padding-left: 407px;">
+                            <div class="label">
+                                <label for="sip">Sip</label>
+                                <input type="radio" checked name="checked" value="Sip">
+                            </div>
+                            <div class="label" style="padding-left: 66px;">
+                                <label for="lumpSum">LumpSum</label>
+                                <input type="radio" name="checked" value="LumpSum">
+                            </div>
+                            </div>
+                    </div>
+                    <div class="form_group">
+                        <input type="text" id="Investment" placeholder="   Monthly Investment" 
+                        class="form-control" onchange="commas(this)" required="">
+                    </div>
+                    <div class="form_group">
+                        <input type="text" id="return_rate" placeholder="   Expected Return Rate " 
+                        class="form-control" onchange="percentage(this)" required="">
+                    </div>
+                    <div class="form_group">
+                        <input type="number" id="year" placeholder="   Time Period" 
+                        class="form-control" required="">
+                    </div>
+                    <div class="form_group">
+                        <input type="button" id="btn1" class="btn" value="Calculate" onclick="calculateResult()">
+                    </div>
+                </form>
+
+                <div class="form1">
+                    <img src="./oSS5YnnWqz.gif" class="img2" alt="" srcset="">
+                </div>
+        </section>
+        <section class="section2">
+            <div class="container">
+                <div class="card_body">
+                    <table class="table">
+                        <tr class="row1">
+                            <div class="invest">
+                                <th class="col1">Invested Amount<span id="mode-1"> SIP</span>  💸</th>
+                            </div>
+                            <div class="Col2">
+                                <th class="col1" style="padding-left: 156px;"><span id="print1"></span><span id="print_est_return"></span></th>
+                            </div>
+                        </tr>
+                        <tr class="row2">
+                            <div class="invest2">
+                                <th class="col1" style="padding-right: 34px; padding: 19px;">Est. Returns<span id="mode-2"> SIP</span>  💸</th>
+                            </div>
+                            <div class="Col2">
+                                <th class="col1" style="padding-left: 156px;"><span id="print2"></span><span id="print_est_return1"></span></th>
+                            </div>
+                        </tr>
+                        <tr class="row3">
+                            <div class="invest3">
+                                <th class="col1" style="padding-right: 40px; padding: 3px;">Total Inv. <span id="mode-3"> SIP</span>  💸</th>
+                            </div>
+                            <div class="Col2">
+                                <th class="col1" style="padding-left: 156px;"><span id="print3"></span><span id="print_est_return2"></span></th>
+                            </div>
+                        </tr>
+                    </table>
+                    <div class="form2">
+                        <img src="./Pie-Chart-GIF.gif" alt="" srcset="" class="img1">
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+<script src="BusCalc.js"></script>
+</html>

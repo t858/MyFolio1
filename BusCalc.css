@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    text-align: center;
+    font-size: 45px;
+    background-color: rgb(10, 93, 202);
+    padding: 11px;
+    color: white;
+}
+
+input{
+    width: 36pc;
+    height: 44px;
+    font-size: 19px;
+    border-radius: 22px;
+    border: 1px solid rgb(182, 180, 180);
+
+}
+
+
+.form_group{
+    padding: 16px;
+}
+
+form{
+    border: 1px solid rgb(204, 200, 200);
+    width: 623px;
+    margin: 21px;
+    border-radius: 12px;
+}
+
+.btn{
+    width: 12rem;
+    height: 48px;
+    background-color:rgb(11, 192, 11);
+    border: none;
+    box-shadow: none;
+    border-radius: 22px;
+    color: white;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 23px;
+    width: 23px;
+}
+#currency{
+    height: 34px;
+    width: 78px;
+    background-color: white;
+    border: 1px solid rgb(197, 195, 195);
+    display: block;
+    border-radius: 22px;
+    font-size: 15px;
+}
+
+option{
+
+    background-color: rgb(233, 236, 240);
+    margin-top: 26px;
+}
+
+.form_group:first-child{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section2{
+    padding-left: 86px;
+}
+
+.Col2{
+    padding: 6px;
+}
+
+th{
+    padding-left: 24px;
+}
+
+.row2{
+    padding-top: 24px;
+}
+
+.col2{
+    padding-left: 156px;
+}
+
+.img2{
+    width: 686px;
+    height: 261px;
+    border-radius: 12px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.img1{
+    width: 372px;
+    height: 301px;
+    padding-top: 1px;
+    border-radius: 12px;
+    padding-left: 1px;
+}
+
+.card_body{
+    border: 1px solid rgb(189, 186, 186);
+    margin-top: 65px;
+    height: 167px;
+    width: 378px;
+    position: absolute;
+    border-radius: 12px;
+}
+
+.form1{
+    border: 1px solid rgb(189, 186, 186);
+    border-radius: 12px;
+    margin-top: 50px;
+    height: 265px;
+    width: 689px;
+    margin-left: 24px;
+}
+
+.form2{
+    border: 1px solid rgb(189, 186, 186);
+    border-radius: 12px;
+    margin-top: 83px;
+    height: 305px;
+}
